@@ -1,2 +1,2 @@
 function validatePassword() {
-  const password = document.getElementById
+  password = document.getElementById("PasswordInput").value // creates a variable that gets the answer entered by the user
