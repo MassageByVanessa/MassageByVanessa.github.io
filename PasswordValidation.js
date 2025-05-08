@@ -4,6 +4,7 @@ function validatePassword() {
   if (password == "") { // is the password equal to nothing?
     alert("error!");
     return false;
+  }
   else if (passwordLength < 8) { // is the password less than 8 characters?
     alert("password is too short!");
     return false;
