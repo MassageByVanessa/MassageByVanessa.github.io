@@ -27,4 +27,5 @@ function validatePassword() {
   }
   else {
     return true;
+  }
 }
