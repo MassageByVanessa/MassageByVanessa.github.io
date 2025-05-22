@@ -21,6 +21,10 @@ function validatePassword() {
     alert("Password needs to contain a lowercase letter!");
     return false;
   }
+  else if (Space) {
+    alert("Password cannot contain spaces!")
+    return false;
+  }
   else {
     return true;
 }
