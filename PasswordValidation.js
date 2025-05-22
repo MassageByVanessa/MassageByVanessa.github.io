@@ -1,5 +1,5 @@
 function validatePassword() {
-  password = document.getElementById("PasswordInput").value // creates a variable that gets the answer entered by the user
+  let password = document.getElementById("PasswordInput").value // creates a variable that gets the answer entered by the user
   let passwordLength = password.length; // creates a variable for the password length - this will be used for the validation.
   let UpperCase = /[A-Z]/.test(password);
   let LowerCase = /[a-z]/.test(password);
