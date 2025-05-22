@@ -14,11 +14,11 @@ function validatePassword() {
     return false;
   }
   else if (!UpperCase) {
-    alert("Password needs to contain an uppercase letter!")
+    alert("Password needs to contain an uppercase letter!");
     return false;
   }
   else if (!LowerCase) {
-    alert("Password needs to contain a lowercase letter!")
-    return false:
+    alert("Password needs to contain a lowercase letter!");
+    return false;
   }
 }
