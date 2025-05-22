@@ -3,6 +3,7 @@ function validatePassword() {
   let passwordLength = password.length; // creates a variable for the password length - this will be used for the validation.
   let UpperCase = /[A-Z]/.test(password);
   let LowerCase = /[a-z]/.test(password);
+  let Numbers = /[0-9]/.test(password);
   let Space = /\s/.test(password);
   
   if (password == "") { // is the password equal to nothing?
@@ -20,6 +21,11 @@ function validatePassword() {
   else if (!LowerCase) {
     alert("Password needs to contain a lowercase letter!");
     return false;
+  }
+    
+  else if (!Numbers) {
+    alert("Password needs to contain a number!");
+    return false
   }
   else if (Space) {
     alert("Password cannot contain spaces!")
