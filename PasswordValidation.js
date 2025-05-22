@@ -21,4 +21,6 @@ function validatePassword() {
     alert("Password needs to contain a lowercase letter!");
     return false;
   }
+  else {
+    return true;
 }
