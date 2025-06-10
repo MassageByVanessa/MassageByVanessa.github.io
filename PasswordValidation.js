@@ -9,7 +9,7 @@ function validatePassword() {
   let Numbers = /[0-9]/.test(password);
   let Space = /\s/.test(password);
 
-  if (emailSymbol) {
+  if (!emailSymbol) {
     alert("You need to use a @ for the email!");
   }
   if (password == "") { // is the password equal to nothing?
