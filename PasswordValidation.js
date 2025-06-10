@@ -1,12 +1,17 @@
 function validatePassword() {
+  let email = document.getElementById("EmailInput").value
   let password = document.getElementById("PasswordInput").value // creates a variable that gets the answer entered by the user
   let confirmPassword = document.getElementById("ConfirmPasswordInput").value
   let passwordLength = password.length; // creates a variable for the password length - this will be used for the validation.
+  let emailSymbol = /@/.test(password);
   let UpperCase = /[A-Z]/.test(password);
   let LowerCase = /[a-z]/.test(password);
   let Numbers = /[0-9]/.test(password);
   let Space = /\s/.test(password);
-  
+
+  if (!emailSymbol) {
+    alert("You need to use a @ for the email!");
+  }
   if (password == "") { // is the password equal to nothing?
     alert("error! Password is equal to nothing!");
     return false;
