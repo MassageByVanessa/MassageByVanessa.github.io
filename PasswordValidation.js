@@ -11,8 +11,9 @@ function validatePassword() {
 
   if (!emailSymbol) {
     alert("You need to use a @ for the email!");
+    return false;
   }
-  if (password == "") { // is the password equal to nothing?
+  else if (password == "") { // is the password equal to nothing?
     alert("error! Password is equal to nothing!");
     return false;
   }
