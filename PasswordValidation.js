@@ -1,5 +1,6 @@
 function validatePassword() {
   let password = document.getElementById("PasswordInput").value // creates a variable that gets the answer entered by the user
+  let confirmPassword = document.getElementById("ConfirmPasswordInput").value
   let passwordLength = password.length; // creates a variable for the password length - this will be used for the validation.
   let UpperCase = /[A-Z]/.test(password);
   let LowerCase = /[a-z]/.test(password);
@@ -29,6 +30,10 @@ function validatePassword() {
   }
   else if (Space) {
     alert("Password cannot contain spaces!")
+    return false;
+  }
+  else if (password != confirmPassword) {
+    alert("Password fields do not match!")
     return false;
   }
   else {
