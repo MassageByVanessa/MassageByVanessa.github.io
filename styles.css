@@ -1,9 +1,9 @@
 body {
   background-color: #E5FDF3;
-  color: white;
 }
 button {
   font-size: 18px;
   padding: 9px 18px;
   border-radius: 6px;
+  color: white;
 }
